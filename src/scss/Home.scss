@@ -1,0 +1,147 @@
+.Home {
+  background-color: var(--primary-color-3);
+}
+
+.home_container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.home_header {
+  margin-top: 140px;
+  margin-left: 20px;
+
+  .home_header_subtitle {
+    color: var(--primary-color-4);
+    display: block;
+    line-height: 1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+
+  .home_header_title {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 52px;
+  }
+}
+
+.home_content {
+  display: flex;
+  flex-wrap: wrap;
+
+  .home_column {
+    width: calc(100% / 4);
+    padding: 16px;
+  }
+
+  .home_column img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .home_card {
+    .home_row {
+      display: flex;
+      justify-content: space-between;
+      height: 72px;
+
+      > a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .home_film_title {
+        color: #fff;
+        font-size: 15px;
+        margin-top: 12px;
+        font-weight: 600;
+      }
+
+      .home_film_year {
+        color: var(--primary-color-4);
+        font-size: 15px;
+        margin-top: 12px;
+        font-weight: 600;
+      }
+
+      .home_row_right {
+        display: flex;
+        gap: 20px;
+        margin-top: 4px;
+      }
+
+      .home_film_nation,
+      .home_film_time,
+      .home_film_rating {
+        font-size: 16px;
+        color: #fff;
+        margin: 0;
+        cursor: pointer;
+
+        .home_custom_icon {
+          color: var(--primary-color-4);
+          font-size: 16px;
+          margin-right: 8px;
+          position: relative;
+          top: 2px;
+        }
+      }
+
+      .home_film_nation {
+        color: var(--primary-color-4);
+        border: 1px solid;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 8px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.home_card .home_poster_card {
+  position: relative;
+}
+
+.home_card .home_poster_card:hover .overlay-btn {
+  display: block;
+}
+
+.overlay-btn {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.overlay-btn li {
+  list-style: none;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.overlay-btn li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.overlay-btn li:first-child {
+  margin-top: 150px;
+}
+
+.btn_home_card {
+  transition: all 0.3s ease 0s;
+}
